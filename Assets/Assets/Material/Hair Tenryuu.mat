@@ -8,15 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hair Tenryuu
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: LOD_FADE_CROSSFADE PIXELSNAP_ON _ALPHAPREMULTIPLY_ON _COLORADDSUBDIFF_ON
-    _DETAIL_MULX2 _EMISSION _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: 8080244ee0b2eaf40946698d28893b45, type: 3}
+  m_ShaderKeywords: LOD_FADE_CROSSFADE PIXELSNAP_ON _ALPHAPREMULTIPLY_ON _DETAIL_MULX2
+    _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -38,6 +37,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BackFaceTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BackTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -66,6 +69,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailBump:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -109,6 +116,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 56f195f1d9f38164b965e76cb8cf0ddd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -141,6 +152,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _GlitterColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -153,7 +168,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _LightingShadowMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainBump:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -229,6 +252,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _RimEnviroMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -265,6 +292,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TangentShiftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TextGlyphs:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -281,6 +312,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _VertexManipulationHeightMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -293,12 +328,14 @@ Material:
     - _AOStrength: 0
     - _AdditiveOffset: 0
     - _AdditiveSoftness: 0.005
+    - _AlphaSharp: 0
     - _AngleCompareTo: 0
     - _AngleMinAlpha: 0
     - _AngleType: 0
     - _AnisoSpec1Alpha: 1
     - _AnisoSpec2Alpha: 1
     - _AnisoUseTangentMap: 0
+    - _AnisotropyA: -0.13
     - _AoIndirectStrength: 1
     - _AttenuationMultiplier: 0
     - _BackFaceDetailIntensity: 1
@@ -314,6 +351,7 @@ Material:
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
+    - _ClampCutoff: 1
     - _ClearCoat: 1
     - _ClearCoatForceLighting: 0
     - _ClearCoatInvertSmoothness: 0
@@ -322,9 +360,11 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Clip: 0.5
     - _ColorMask: 15
+    - _ColorMode: 0
     - _ContinuousDissolve: 0
     - _Cull: 0
-    - _Cutoff: 0.5
+    - _Culling: 2
+    - _Cutoff: 0
     - _DebugCameraData: 0
     - _DebugDisplayDebug: 0
     - _DebugLightingData: 0
@@ -402,6 +442,7 @@ Material:
     - _EnableRimLighting: 0
     - _EnableSSS: 0
     - _EnableSpecular: 1
+    - _Exposure: 1
     - _FlipbookAdd: 0
     - _FlipbookAlphaControlsFinalAlpha: 0
     - _FlipbookCurrentFrame: -1
@@ -436,14 +477,16 @@ Material:
     - _GlitterMinBrightness: 0
     - _GlitterSize: 0.3
     - _GlitterSpeed: 10
+    - _GlossA: 0
+    - _GlossB: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
-    - _GlossyReflections: 1
+    - _GlossyReflections: 0
     - _IgnoreFog: 0
     - _InvertSmoothness: 0
     - _LightingAOUV: 0
     - _LightingAdditiveIntensity: 1
-    - _LightingEnabled: 1
+    - _LightingEnabled: 0
     - _LightingIndirectContribution: 0.2
     - _LightingMinLightBrightness: 0
     - _LightingNumRamps: 1
@@ -483,6 +526,7 @@ Material:
     - _Mode: 3
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
+    - _OcclusionScale: 1
     - _OcclusionStrength: 1
     - _PanoBlend: 0
     - _PanoCubeMapToggle: 0
@@ -520,6 +564,7 @@ Material:
     - _RimStrength: 0
     - _RimWidth: 0.8
     - _RimWidthNoiseStrength: 0.1
+    - _Rotation: 0
     - _SSSDistortion: 1
     - _SSSPower: 5
     - _SSSSCale: 0.25
@@ -535,6 +580,7 @@ Material:
     - _ShadowOffset1: 0
     - _ShadowOffset2: 0
     - _ShadowStrength: 0
+    - _Shininess: 0.2
     - _Smoothness: 0
     - _SmoothnessFrom: 1
     - _SmoothnessTextureChannel: 0
@@ -562,6 +608,8 @@ Material:
     - _StencilWriteMask: 255
     - _StencilZFailOp: 0
     - _Strength: 0.2
+    - _TangentA: -1
+    - _TangentB: -1
     - _TextEnabled: 0
     - _TextFPSEmissionStrength: 0
     - _TextFPSEnabled: 0
@@ -574,9 +622,13 @@ Material:
     - _TextTimeEnabled: 0
     - _TextTimeRotation: 0
     - _UVSec: 0
+    - _UseEnergyConserv: 0
+    - _UseSpecColor: 0
+    - _UseTangentTexture: 0
     - _UseUIAlphaClip: 0
     - _VertexManipulationHeight: 0
     - _VertexManipulationHeightBias: 0
+    - _WindQuality: 0
     - _ZBias: 0
     - _ZTest: 4
     - _ZWrite: 0
@@ -706,7 +758,8 @@ Material:
     - _BlueColor: {r: 1, g: 1, b: 1, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _ClearCoatTint: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.72005737, g: 0.5707547, b: 1, a: 1}
+    - _Color: {r: 3.58418, g: 0.656787, b: 0.5066642, a: 1}
+    - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _DetailTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _DetailTint: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveDetailPan: {r: 0, g: 0, b: 0, a: 0}
@@ -733,6 +786,7 @@ Material:
     - _GlitterPan: {r: 0, g: 0, b: 0, a: 0}
     - _GlobalPanSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _GreenColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _MainDetailNormalPan: {r: 0, g: 0, b: 0, a: 0}
     - _MainDistanceFade: {r: 0, g: 0, b: 0, a: 0}
     - _MainNormalPan: {r: 0, g: 0, b: 0, a: 0}
@@ -753,6 +807,8 @@ Material:
     - _SSSColor: {r: 1, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Specular: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularTint: {r: 0.1391652, g: 0.163198, b: 0.1911765, a: 1}
     - _SpecularToonInnerOuter: {r: 0.25, g: 0.3, b: 0, a: 1}
     - _TextFPSColor: {r: 1, g: 1, b: 1, a: 1}
@@ -767,6 +823,7 @@ Material:
     - _TextTimeOffset: {r: 0, g: 0, b: 0, a: 0}
     - _TextTimePadding: {r: 0, g: 0, b: 0, a: 0}
     - _TextTimeScale: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _VertexManipulationHeightPan: {r: 0, g: 0, b: 0, a: 0}
     - _VertexManipulationLocalRotation: {r: 0, g: 0, b: 0, a: 1}
     - _VertexManipulationLocalScale: {r: 1, g: 1, b: 1, a: 1}
